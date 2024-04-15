@@ -9,11 +9,13 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -35,4 +37,26 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 94%;
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  inline-size: 1140px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
