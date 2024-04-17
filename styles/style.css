@@ -44,7 +44,7 @@ ol {
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 94%;
+  line-height: 0.94;
 }
 
 .content {
@@ -152,6 +152,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  cursor: pointer;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -206,9 +207,13 @@ ol {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-self: baseline;
 }
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 
 .content__details {
   width: 399px;
@@ -269,8 +274,8 @@ ol {
 
 .content__video-card-description-container {
   padding: 4px 0;
-  max-width: 200px;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   gap: 4px;
 }
