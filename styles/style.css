@@ -148,6 +148,7 @@ ol {
   display: flex;
   gap: 5px;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
